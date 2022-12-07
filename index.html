@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Operators</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="js/app.js"></script>
+    <div class="container">
+        <h1 class="alert alert-info m-4">Operators</h1>
+        <hr>
+        <h3 class="alert alert-warning">1. </h3>
+        <p>
+            - Operators are used for various mathematical or string operations. 
+            <br>
+            Ex. Assignment of a value '=' | Addition of numbers '+' | Concatenation of strings '+' | Multiplication '*' | Division '/' | Substraction '-' | Reminder / Modules '%' | less than '<' | less than or equal to '=<' | greater than '>' | greater than or equal to '>=' | exponential '**' | Increament '+=' & '++' | Decreament '-=' & '--' etc
+            <br>
+            <br>
+            - 
+            <b>Examples -</b>
+            <br>
+            <br>
+
+            <b>*</b> Assignment of values - assigned the string & then a number to the same property
+            <br>
+            --- Output -->
+                <script>  
+                   var x = 'spo';
+                   document.write(x);
+                   var x = 7;
+                   document.write(x);
+                </script>
+            <br>
+            <br>
+            <b>*</b> Addition of numbers
+            <br>
+            --- Output -->
+                <script>  
+                  var x2 = 48 + 96;
+                  document.write(x2);
+                  var x3 = x2 + 0.78;
+                  document.write(' ' + x3);
+                </script>
+            <br>
+            <br>
+            <b>*</b> Concatenation of Strings & Numbers
+            <br>
+            --- Output -->
+               <script>
+                var x4 = 'Key' + 'Board' + 9;
+                document.write(x4);
+               </script>
+            <br>
+            <br>
+            <b>*</b> Substraction of Numbers
+            <br>
+            --- Output -->
+                <script>
+                    var x5 = 98 - 83;
+                    var x6 = x5 - 8;
+                    document.write(x6);
+                </script>
+            <br>
+            <br>
+            <b>*</b> Division of Numbers
+            <br>
+            --- Output -->
+                <script>
+                   var x7 = 98 / 48;
+                   document.write(x7);
+                </script>
+             <br>
+             <br>
+             <b>*</b> Reminder / Modulus of Numbers
+             <br>
+             --- Output -->
+                 <script>
+                    var x8 = 98 % 47;
+                    document.write(x8);
+                 </script>
+             <br>
+             <br>
+             <b>*</b> less than < & less than equal to <=
+             <br>
+             --- Output -->
+                 <script>
+                   var x9 = 79 < 25;
+                   document.write(x9);
+                   var x10 = 23;
+                   document.write( "  " + ( x10 <= 25 ) ); //  x10 < 25 or x10 == 25 >> true or false >> true
+                 </script>
+             <br>
+             <br>
+             <b>*</b> greater than < & greater than equal to <=
+             <br>
+             --- Output -->
+                 <script>
+                   var x11 = 79 > 25;
+                   document.write(x11);
+                   var x12 = 25 >= 37;  // it compiles to 25 > 37 or 25 == 37 >> false or false >> false
+                   document.write( " " + x12); 
+                 </script>
+             <br>
+             <br>
+             <b>*</b> Exponential 
+             <br>
+             --- Output -->
+                 <script>
+                   var x13 = 3**2;
+                   document.write(x13);
+                   var x14 = x13 ** 3;
+                   document.write(" " +x14)
+                 </script>
+             <br>
+             <br>
+             <b>*</b> Increament '+=' & '++'
+             <br>
+             --- Output -->
+                 <script>
+                   var x14 = 23;
+                   x14 += 5 ; // var x14 = x14 + 5;
+                   document.write(x14);
+                   x14++;
+                   document.write(' ' + x14);
+                 </script>
+            <br>
+            <br>
+            <b>*</b> Decreament '-=' & '--'
+            <br>
+            --- Output -->
+                <script>
+                  var x15 = 86;
+                  x15 -= 18 ; // var x14 = x14 + 5;
+                  document.write(x15);
+                  x15--;
+                  document.write(' ' + x15);
+                </script>
+             <br>
+             <br>
+             <b>*</b> Equality '=='' & strictly equal to '==='
+             <br>
+             --- Output -->
+                 <script>
+                 var x21 = 73;
+                 var x22 = '73';
+                 var x23 = 73;
+
+                 var x25 = x21 == x22;
+                 document.write(x25); 
+
+                 var x26 = x21 === x22;
+                 document.write(" | " + x26);
+
+                 var x27 = x21 === x23;
+                 document.write(" | " + x27);
+
+                 </script>
+                <br>
+                 // equality operator '==' compares only values & returns true or false <br>
+                 // strictly equal to '===' compares datatype along with values & returns true or false 
+                 <br>
+                 <br>
+                 <b>*</b> Falsy value - 0 | false | empty Array ( whose length is 0) | empty String | undefined | null <br>
+                 <b>*</b> Truthy Value - 1 ( any positive number ) | true | array ( whose length is min 1) | any string (with min 1 character) | 
+                 <br>
+                 --- Output -->
+                <script>
+                document.write("undefined == null --> " + ( undefined == null )); // false == false --> true
+                document.write(" | ");
+                document.write("undefined === null --> " + ( undefined === null )); // false(undefined) === false(object) --> false
+                document.write(" <br> --- Output --> ");
+
+                document.write("false == 0 --> " + (false == 0)); // false == false --> true
+                document.write(" | ");
+                document.write("false === 0 --> " + ( false === 0)); // false(boolean) === 0(number) --> false
+                document.write(" <br> --- Output --> ");
+
+                document.write("false == 1 --> " + (false == 1)); // false == true --> false
+                document.write(" | ");
+                document.write("false === 1 --> " + ( false === 1)); // false(boolean) === 1(number) --> false
+                document.write(" <br> --- Output --> ");
+
+                document.write("[] == 0 --> " + ( [] == 0)); // false == false --> true
+                document.write(" | ");
+                document.write("[] === 0 --> " + ( [] === 0)); // false(empty Array) === 0(number) --> false
+                document.write(" <br> --- Output --> ");
+
+                document.write("[].length == 0 --> " + ( [].length == 0)); // false == false --> true
+                document.write(" | ");
+                document.write("[].length === 0 --> " + ( [].length === 0)); // 0(number ) === 0(number) --> true
+                document.write(" <br> --- Output --> ");
+
+                document.write(" ['ds'] == 'ds' --> " + ( ['ds'] == 'ds' ) ); // 'ds' == 'ds' --> true
+                document.write(" | ");
+                document.write(" ['ds'] === 'ds' --> " + ( ['ds'] === 'ds') ); // 'ds'(array value) === 'ds'(string) --> false
+                document.write(" | ");
+                document.write(" ['ds'].length == 1 --> " + ( ['ds'].length == 1 ) ); // 1 == 1 --> true
+                document.write(" | ");
+                document.write(" <br> --- Output --> ");
+
+                document.write(" [3] == 1 --> " + ( [3] == 1 ) ); // 3 == 1 --> false
+                document.write(" | ");
+                document.write(" [3] == 3 -->" + ( [3] == 3 ) ); // 3 == 3 --> true
+                document.write(" | ");
+                document.write(" [3] === 3 -->" + ( [3] === 3 ) ); // 3 (array value) == 3(number) --> false
+                document.write(" | ");
+                document.write(" [3].length == 1 --> " + ( [3].length == 1 ) ); // 1 == 1 --> true
+                document.write(" | ");
+                document.write(" [3].length == 3 --> " + ( [3].length == 3 ) ); // 1 == 3 --> false
+                </script>
+                    
+           <br>
+           <br>
+           
+           <b>*</b> logical and '&&' | logical or '||'
+            <br>
+            --- Output -->
+                <script>
+                  var z = 10;
+                  document.write('var z = 10');
+                  document.write(" <br> --- Output --> ");
+                  document.write(' z > 7 && z < 16 --> ' + (z > 7 && z < 16)); // true && true >> true
+                  document.write(" <br> --- Output --> ");
+                  document.write(' z >= 10 && z < 20 && z !== 10 --> ' + (z >= 10 && z < 20 && z*2 === 10)); // true && true && false >> false
+                  document.write(" <br> --- Output --> ");
+                  document.write(' z > 20 || z < 40 --> ' + (z > 20 || z < 40) ); // false or true >> true
+                  document.write(" <br> --- Output --> ");
+                  document.write(" z > 20 || z !== '20' --> " + (z > 20 || z !== '20') ); // false or true >> true
+                  document.write(" <br> --- Output --> ");
+                  document.write(" z > 20 || z !== 10 --> ", (z > 20 || z !== 10) ); // false or false >> false
+
+                  document.write(" <br> --- Output --> ");
+                  document.write('(z<=15 && z*2 >= 20 && z === 10 ) && ( z != 12 && z >= 20 && z !== "10" ) --> ' + ((z<=15 && z*2 >= 20 && z === 10 ) && ( z != 12 && z >= 20 && z !== '10' )));
+                  // (true && true && true) || (true && false && true) >> true or false >> false
+
+                  document.write(" <br> --- Output --> ");
+                  document.write('(z*3 > 20 && z**3 = 1000 && z !== "10") && ( z == 10 && z / 2 == 5 && z- 3 == 7) --> ' + (( z*3 > 20 && z**3 == 1000 && z !== '10' ) && ( z == 10 && z / 2 == 5 && z - 3 == 7) ));
+                  // (true && true && true) && (true && true && true) >> true && true >> true 
+
+                  document.write(" <br> --- Output --> ");
+                  document.write(" (z == '10') && (z === '10') --> " + ( (z == '10') && (z === '10') ) );
+                  // true && false >> false
+
+                  document.write(" <br> --- Output --> ");
+                  document.write(" (z != '10' ) && (z !== '10') --> " + ( (z != '10') && ( z !== '10' )) );
+                  // false && true >> false
+
+                  document.write(" <br> --- Output --> ");
+                  document.write("(z*3 > 20 && z == 10 || z === 10) --> " + (z*3 > 20 && z == 10 || z === 10) );
+                  // true && true || true >> true || true >> true
+
+                  document.write(" <br> --- Output --> ");
+                  document.write("(z*3 > 20 && z == 9 || z === 10) --> " + ( z*3 > 20 && z == 9 || z === 10));
+                  // true && false || true >> false || true >> true
+
+                  document.write(" <br> --- Output --> ");
+                  document.write("(z*3 > 40 && z == 10 || z === 10) --> " + ( z*3 > 40 && z == 9 || z === 10 ));
+                  // false && true || true >> false || true >> true
+
+                  document.write(" <br> --- Output --> ");
+                  document.write("( ( z*3 > 40 ) && ( z == 10 || z === 10 ) ) --> " + ( ( z*3 > 40 ) && ( z == 9 || z === 10 ) ));
+                  // ( false ) && ( true || true ) >> false && true >> false
+
+                  document.write("<br><br>");
+                  document.write(" * Operators work on first Come first Serve Basis - It makes operation in the sequence ( if a statement is in brackets() that will be executed separately ). So result of true && false || true is >> ( true && false) || true >> false || true >> false.  ");
+                  document.write("<br>");
+
+                  document.write(" <br> --- Output --> ");
+                  document.write("(z*3 > 20 && z == 9 || z === 10) --> " + ( z*3 > 20 && z == 9 || z === 10 ));
+                  // true && true || false >> true || false >> true
+
+                  document.write(" <br> --- Output --> ");
+                  document.write("(z*3 > 20 && z == 9 || z === '10') --> " + ( z*3 > 20 && z == 9 || z === '10' ));
+                  // true && false || false >> false || false >> false 
+
+                  document.write(" <br> --- Output --> ");
+                  document.write("(z*3 > 20 && z == 9 || z === '10' || z == 10) --> " + ( z*3 > 20 && z == 9 || z === '10' || z == 10));
+                  // true && false || false || true >> false || false || true >> true
+
+                  document.write(" <br> --- Output --> ");
+                  document.write("(z*3 > 20 && z == 9 || z === '10' && z == 10) --> " + (z*3 > 20 && z == 9 || z === '10' && z == 10 ));
+                  // true && false || false && true >> false || false && true >> false && true >> false
+
+                  document.write(" <br> --- Output --> ");
+                  document.write("(z*3 > 20 && z == 9 || z === '10' && z == 10) --> " + (z*3 > 20 && z == 9 || z === '10' && z == 10 ));
+                  // true && false || false && true >> false || false && true >> false && true >> false
+
+                  document.write(" <br> --- Output --> ");
+                  document.write("(z*3 > 20 && z === '10' || z == 10 && z < 30 ) --> " + (z*3 > 20 && z === '10' || z == 10 && z < 30));
+                  // true && false || true && true >> false || true && true >> true && true >> true
+                  
+                  document.write(" <br> --- Output --> ");
+                  document.write("(z<=20 && z>10) || (z!=='10' && z>5) --> " + ( (z<=20 && z > 10 ) || ( z!=='10' && z>5 ) ) );
+                  // (true && false) || (true && true) >> false || true >> true 
+                
+                  document.write(" <br> --- Output --> ");
+                  document.write(" ( z === 10 || z < 20 || z > 25 ) && ( z!= 5 || z >= 20 || z === '10' ) --> " + ( ( z===10 || z<20 || z>25 ) && ( z!=5 || z>=20 || z === '10') ) );
+                  // ( true || true || false ) && ( true || false || false) >> true && true >> true
+
+                  document.write(" <br> --- Ouput --> ");
+                  document.write(" ( z === 10 && z < 20 && z > 25 ) || ( z !=5 && z >= 20 && z === '10' ) --> " + ( ( z === 10 && z < 20 && z > 25 ) || ( z != 5 && z >= 20 && z === '10') ) );
+                  // ( true && true && false ) || ( true && false && false ) >> false || false >> false
+
+                  document.write(" <br> --- Ouput --> ");
+                  document.write(" ( z === 10 && z < 20 && z > 25 ) || ( z !=5 || z >= 20 && z === 10 ) --> ", ( z === 10 && z < 20 && z > 25) || ( z != 5 || z >= 20 && z === 10 ) );
+                  // (true && true && false) || (true || false && true ) >> false || true >> true
+
+                </script>
+             <br>
+             <br>
+
+        </p>
+        <br>
+        <h3 class="alert alert-warning">Assignment</h3>
+        <p>
+           --
+            <br>
+            <b>Ex.1 -</b> 
+            <br>
+            Output - --> 
+            <script>
+                
+            </script>
+            <br>
+            <br>
+           
+            <br>
+    
+        </p>
+
+      
+    </div>
+
+</body>
+
+</html>
